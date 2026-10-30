@@ -1,10 +1,10 @@
 import React, { useState, useId } from 'react';
 import { Send, MessageSquare, AlertCircle, ExternalLink, Mail, Phone } from 'lucide-react';
-import { 
-  PROFILE, 
-  PROJECT_TYPES, 
-  BUDGET_OPTIONS, 
-  TIMELINE_OPTIONS 
+import {
+  PROFILE,
+  PROJECT_TYPES,
+  BUDGET_OPTIONS,
+  TIMELINE_OPTIONS
 } from '../data/portfolioData';
 
 export default function WhatsAppEnquiry() {
@@ -81,7 +81,7 @@ export default function WhatsAppEnquiry() {
     const finalMessage = constructMessage(formData);
     const encoded = encodeURIComponent(finalMessage);
     const whatsappUrl = `https://wa.me/${PROFILE.whatsappInternational}?text=${encoded}`;
-    
+
     // Open WhatsApp click-to-chat
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
@@ -118,7 +118,7 @@ export default function WhatsAppEnquiry() {
                 <label htmlFor={nameId} className="form-label">
                   FULL NAME <span className="req">*</span>
                 </label>
-                <input 
+                <input
                   id={nameId}
                   type="text"
                   placeholder="e.g. Alexander Vance"
@@ -135,7 +135,7 @@ export default function WhatsAppEnquiry() {
                 <label htmlFor={companyId} className="form-label">
                   COMPANY / BUSINESS (OPTIONAL)
                 </label>
-                <input 
+                <input
                   id={companyId}
                   type="text"
                   placeholder="e.g. Vance Hospitality Co."
@@ -150,7 +150,7 @@ export default function WhatsAppEnquiry() {
                 <label htmlFor={emailId} className="form-label">
                   EMAIL ADDRESS (OPTIONAL)
                 </label>
-                <input 
+                <input
                   id={emailId}
                   type="email"
                   placeholder="e.g. alex@vancehospitality.com"
@@ -224,7 +224,7 @@ export default function WhatsAppEnquiry() {
                 <label htmlFor={descriptionId} className="form-label">
                   PROJECT DESCRIPTION <span className="req">*</span>
                 </label>
-                <textarea 
+                <textarea
                   id={descriptionId}
                   rows={4}
                   placeholder="Outline your project scope, core challenges, and intended deliverables..."
@@ -241,7 +241,7 @@ export default function WhatsAppEnquiry() {
                 <label htmlFor={additionalNotesId} className="form-label">
                   ADDITIONAL REQUIREMENTS / NOTES (OPTIONAL)
                 </label>
-                <input 
+                <input
                   id={additionalNotesId}
                   type="text"
                   placeholder="e.g. Existing domain, Figma designs ready, specific API integrations..."
@@ -252,7 +252,7 @@ export default function WhatsAppEnquiry() {
               </div>
 
               {/* Submit Trigger (Mobile-visible or direct fallback) */}
-              <button 
+              <button
                 type="submit"
                 className="whatsapp-submit-btn"
                 data-cursor="action"
@@ -284,7 +284,7 @@ export default function WhatsAppEnquiry() {
                 {previewMessage}
               </div>
 
-              <button 
+              <button
                 type="button"
                 onClick={handleSubmit}
                 className="whatsapp-submit-btn"
@@ -299,10 +299,10 @@ export default function WhatsAppEnquiry() {
                 <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', fontWeight: 700, letterSpacing: '0.12em', color: 'var(--text-secondary)', marginBottom: '0.75rem', textTransform: 'uppercase' }}>
                   ALTERNATIVE DIRECT ROUTES
                 </div>
-                
+
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.8125rem' }}>
-                  <a 
-                    href={`mailto:${PROFILE.email}`} 
+                  <a
+                    href={`mailto:${PROFILE.email}`}
                     style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)' }}
                     data-cursor="action"
                   >
@@ -310,8 +310,8 @@ export default function WhatsAppEnquiry() {
                     <span>Email: {PROFILE.email}</span>
                   </a>
 
-                  <a 
-                    href={`tel:${PROFILE.whatsappNumber.replace(/[^0-9]/g, '')}`} 
+                  <a
+                    href={`tel:${PROFILE.whatsappNumber.replace(/[^0-9]/g, '')}`}
                     style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-primary)' }}
                     data-cursor="action"
                   >

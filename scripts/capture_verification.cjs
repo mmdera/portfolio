@@ -15,7 +15,7 @@ async function run() {
   });
 
   const page = await browser.newPage();
-  
+
   // Track console errors
   const consoleErrors = [];
   page.on('console', msg => {

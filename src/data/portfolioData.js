@@ -26,8 +26,8 @@ export const PROFILE = {
   whatsappInternational: "918765989913",
   email: "divyanshbuilds@gmail.com",
   website: "divyanshbuilds.com",
-  resumePath: "/Divyansh_Verma_Resume.pdf",
-  avatarImage: "/images/divyansh-avatar-v2.png",
+  resumePath: "./Divyansh_Verma_Resume.pdf",
+  avatarImage: "./images/divyansh-avatar-v2.png",
   bio: [
     "Development is not merely writing functional code — it is deliberate structural typography, tactile spatial rhythm, and engineering seamless software architectures.",
     "Whether orchestrating an e-commerce platform with automated delivery pipelines, crafting a bespoke hospitality brand experience, or engineering a connected personal productivity OS, I build digital flagships built for endurance and conversion."
@@ -75,7 +75,7 @@ export const FEATURED_PROJECTS = [
     tagline: "Warm editorial photography, rich image composition, and dining atmosphere",
     description: "A modern café website developed for a client, presenting a hospitality brand through a distinctive digital presence. Features warm editorial photography, rich image composition, restrained typography, and an atmosphere appropriate to hospitality.",
     liveUrl: "https://mmdera.github.io/cafe/",
-    image: "/projects/cafe.jpg",
+    image: "./projects/cafe.jpg",
     accentColor: "#E64B35",
     tags: ["HTML5", "Modern CSS", "Vanilla JavaScript", "Responsive Design", "Hospitality UX"],
     role: "Digital Design & Frontend Engineering",
@@ -104,7 +104,7 @@ export const FEATURED_PROJECTS = [
     tagline: "High-impact visual treatment, kinetic typography, and membership conversion",
     description: "A website developed for a fitness business, demonstrating the ability to create a business-specific digital experience with stronger typography, contrasting composition, dynamic layouts, and an energetic visual treatment.",
     liveUrl: "https://mmdera.github.io/fa/",
-    image: "/projects/forge-athletics.jpg",
+    image: "./projects/forge-athletics.jpg",
     accentColor: "#3158D8",
     tags: ["High-Energy UI", "Interactive Timetable", "Modern CSS", "Mobile-First", "Direct Intake"],
     role: "UI/UX & Frontend Architecture",
@@ -133,7 +133,7 @@ export const FEATURED_PROJECTS = [
     tagline: "End-to-end commerce architecture, edge serverless, and logistics integration",
     description: "My business and e-commerce platform, representing my independent product-building and full-stack development work. Combines interface imagery, product presentation, and carefully arranged technical metadata into an active commerce engine.",
     liveUrl: "https://mmdstudio.divyansh-mastermind05.workers.dev/",
-    image: "/projects/mmd-studio.jpg",
+    image: "./projects/mmd-studio.jpg",
     accentColor: "#E7BC49",
     tags: ["Next.js", "Cloudflare Workers", "Payment Gateway", "Shipping APIs", "Full-Stack"],
     role: "Founder & Full-Stack System Architect",
@@ -162,7 +162,7 @@ export const FEATURED_PROJECTS = [
     tagline: "Granular activity logging, progress metrics, and unified workflow dashboards",
     description: "My productivity and tracking platform, demonstrating product thinking and the development of a digital tool. Features a structured, interface-oriented presentation capturing daily tasks, study sessions, focus timers, and personal analytics.",
     liveUrl: "https://tracken.in/",
-    image: "/projects/tracken.jpg",
+    image: "./projects/tracken.jpg",
     accentColor: "#171717",
     tags: ["React", "Analytics Engine", "Task Architecture", "Focus Timers", "Local Storage"],
     role: "Founder & Lead Product Architect",
@@ -193,7 +193,7 @@ export const ARCHIVE_PROJECTS = [
     year: "2026",
     description: "A premium academic portal and learning management platform designed for course navigation, performance metrics, and automated study workflows.",
     liveUrl: "https://mmdera.github.io/lms/",
-    image: "/projects/lms.jpg",
+    image: "./projects/lms.jpg",
     tags: ["Frontend UI", "Academic Dashboards", "Responsive Design"]
   },
   {
@@ -205,7 +205,7 @@ export const ARCHIVE_PROJECTS = [
     year: "2026",
     description: "A comprehensive calculator suite for personal finance, compounding interest, loan amortization, GPA calculations, and everyday numerical modeling.",
     liveUrl: "https://masterminddivyansh.github.io/fyntrack/",
-    image: "/projects/fyntrack.jpg",
+    image: "./projects/fyntrack.jpg",
     tags: ["Financial Math", "Reactive Calculators", "Tooling"]
   }
 ];
